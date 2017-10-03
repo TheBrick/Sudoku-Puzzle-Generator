@@ -20,6 +20,19 @@ namespace MinimalSudokuGen
             values = new int[9, 9];
         }
 
+        public String toLongString()
+        {
+            String R = "";
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    R += values[j, i];
+                }
+            }
+            return R;
+        }
+
         #region Core Functions
         public void print()
         {
@@ -51,6 +64,11 @@ namespace MinimalSudokuGen
                     System.Console.Write("\n");
                 }
             }
+        }
+
+        internal object Split(char v)
+        {
+            throw new NotImplementedException();
         }
 
         //Suppose I divide the 9x9 grid into a 3x3 array a, each a[i,j] being a 3x3 Box. This returns a[i,j]
@@ -118,6 +136,20 @@ namespace MinimalSudokuGen
             }
 
             return true;
+        }
+
+        public void pullFromLongString(string s)
+        {
+            if (s.Length != 81)
+            {
+                throw new Exception("sudoku csv fucked up");
+            }
+            for (int i = 0; i < 81; i++)
+            {
+                int row = i / 9;
+                int column = i % 9;
+                this.values[column, row] = (int)(Char.GetNumericValue(s[i]));
+            }
         }
 
         //Sets this puzzle equal to the text file fileName
@@ -453,6 +485,55 @@ namespace MinimalSudokuGen
 
             return listOfCandidates.ElementAt(0);
 
+        }
+
+        public Puzzle findBadMinimalPuzzle()
+        {
+            Puzzle workPuzzle = new Puzzle();
+
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    workPuzzle.values[i, j] = this.values[i, j];
+                }
+            }
+
+            for (int y = 0; y < 9; y++)
+            {
+                for (int x = 0; x < 9; x++)
+                {
+                    //Check every location on the puzzle we're looking at to see if we can reduce it without making it non-unique
+                    int oldValue = workPuzzle.values[x, y];
+                    if (oldValue != 0)
+                    {
+                        workPuzzle.values[x, y] = 0;
+                        if (!workPuzzle.isSolutionUnique())
+                        {
+                            workPuzzle.values[x, y] = oldValue;
+                        }
+                    }
+                }
+                //Console.WriteLine("row {0}", y);
+            }
+
+            return workPuzzle;
+        }
+
+        public int givensCount()
+        {
+            int zerosCounter = 0;
+            for (int y = 0; y < 9; y++)
+            {
+                for (int x = 0; x < 9; x++)
+                {
+                    if (values[x,y] == 0)
+                    {
+                        zerosCounter++;
+                    }
+                }
+            }
+            return 81 - zerosCounter;
         }
 
         #endregion

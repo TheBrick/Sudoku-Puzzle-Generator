@@ -13,3 +13,10 @@
 \\tiberius\home\Jordan.Verasamy\My Documents\Visual Studio 2013\Projects\Sudoku\Sudoku-Puzzle-Generator-master\Sudoku\SudokuMinimalPuzzleGenerator\obj\Debug\MinimalSudoku.csprojResolveAssemblyReference.cache
 \\tiberius\home\Jordan.Verasamy\My Documents\Visual Studio 2013\Projects\Sudoku\Sudoku-Puzzle-Generator-master\Sudoku\SudokuMinimalPuzzleGenerator\bin\Debug\SudokuMinimalPuzzleGenerator.exe
 \\tiberius\home\Jordan.Verasamy\My Documents\Visual Studio 2013\Projects\Sudoku\Sudoku-Puzzle-Generator-master\Sudoku\SudokuMinimalPuzzleGenerator\bin\Debug\SudokuMinimalPuzzleGenerator.pdb
+C:\Sync\school\s1b1 Knowledge Representation\Sudoku-Puzzle-Generator-master\Sudoku\SudokuMinimalPuzzleGenerator\obj\Debug\MinimalSudoku.csprojResolveAssemblyReference.cache
+C:\Sync\school\s1b1 Knowledge Representation\Sudoku-Puzzle-Generator-master\Sudoku\SudokuMinimalPuzzleGenerator\obj\Debug\MinimalSudoku.csproj.CoreCompileInputs.cache
+C:\Sync\school\s1b1 Knowledge Representation\Sudoku-Puzzle-Generator-master\Sudoku\SudokuMinimalPuzzleGenerator\obj\Debug\SudokuMinimalPuzzleGenerator.exe
+C:\Sync\school\s1b1 Knowledge Representation\Sudoku-Puzzle-Generator-master\Sudoku\SudokuMinimalPuzzleGenerator\obj\Debug\SudokuMinimalPuzzleGenerator.pdb
+C:\Sync\school\s1b1 Knowledge Representation\Sudoku-Puzzle-Generator-master\Sudoku\SudokuMinimalPuzzleGenerator\bin\Debug\SudokuMinimalPuzzleGenerator.exe.config
+C:\Sync\school\s1b1 Knowledge Representation\Sudoku-Puzzle-Generator-master\Sudoku\SudokuMinimalPuzzleGenerator\bin\Debug\SudokuMinimalPuzzleGenerator.exe
+C:\Sync\school\s1b1 Knowledge Representation\Sudoku-Puzzle-Generator-master\Sudoku\SudokuMinimalPuzzleGenerator\bin\Debug\SudokuMinimalPuzzleGenerator.pdb
